@@ -10,7 +10,6 @@ print("The smallest number is ", min(numbers))
 print("The largest number is ", max(numbers))
 print("The average of the numbers is ", sum(numbers) / len(numbers))
 
-# print("The average of the numbers is {:.2f}".format(sum(numbers)/len(numbers)))
 
 # 2. Woefully inadequate security checker
 user_names = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye',
