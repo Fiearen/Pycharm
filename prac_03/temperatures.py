@@ -1,7 +1,4 @@
-"""
-CP1404/CP5632 - Practical - Suggested Solution
-Temperature conversions
-"""
+
 
 MENU = """C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
