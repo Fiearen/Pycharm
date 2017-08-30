@@ -13,8 +13,12 @@ def main():
         quick_picks = int(input("How many quick picks? "))
 
     for i in range(quick_picks):
-        for j in range(NUMBERS_PER_LINE):
+        numbers = []
+        while len(numbers) < 6:
             number = random.randint(MINIMUM, MAXIMUM)
+            while number in numbers:
+                number = random.randint(MINIMUM, MAXIMUM)
+            numbers.append(number)
             print("{:2}".format(number), end=' ')
         print()
 
