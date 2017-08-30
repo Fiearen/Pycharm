@@ -1,6 +1,3 @@
-
-
-
 def main():
     word_dict = {}
     sentence = str(input("Please write a sentence: "))
@@ -21,5 +18,6 @@ def longest_word(words):
         if len(word) > length:
             length = len(word)
     return length
+
 
 main()
