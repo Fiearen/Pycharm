@@ -24,5 +24,5 @@ numbers = [int(number) for number in almost_numbers]
 print(numbers)
 
 
-lowercase_full_names = [name.lower() for names in full_names]
+lowercase_full_names = [name.lower() for name in full_names]
 print(lowercase_full_names)
