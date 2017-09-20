@@ -2,6 +2,11 @@
 Practical 6 Kivy
 """
 
+from kivy.app import App
+from kivy.lang import Builder
+from kivy.uix.button import Label
+from kivy.properties import StringProperty
+
 
 class DynamicWidgetsApp(App):
     status_text = StringProperty()
@@ -18,16 +23,11 @@ class DynamicWidgetsApp(App):
 
     def create_widgets(self):
         for name in self.names:
-            temp_labels = Label(text=name)
-            temp_labels.bind(on_release=self.press_entry)
-            self.root.ids.entriesBox.add_widget(temp_labels)
-
-    def press_entry(self, instance):
-        name = instance.text
-        self.status_text = "{}'s number is {}".format(name, self.names[name])
+            temp_label = Label(text=name)
+            self.root.ids.entriesBox.add_widget(temp_label)
 
     def clear_all(self):
-        self.root.ids.entriesBox.clear_labels()
+        self.root.ids.entriesBox.clear_widgets()
 
 
 DynamicWidgetsApp().run()
