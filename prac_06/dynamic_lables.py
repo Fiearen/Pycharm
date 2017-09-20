@@ -26,8 +26,6 @@ class DynamicWidgetsApp(App):
             temp_label = Label(text=name)
             self.root.ids.entriesBox.add_widget(temp_label)
 
-    def clear_all(self):
-        self.root.ids.entriesBox.clear_widgets()
 
 
 DynamicWidgetsApp().run()

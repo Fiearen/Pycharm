@@ -3,7 +3,7 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 
 
-class SquareNumberApp(App):
+class MetreConverterApp(App):
     def build(self):
         Window.size = (400, 200)
         self.title = "Square Number"
@@ -17,7 +17,7 @@ class SquareNumberApp(App):
 
     def m_to_km(self, miles):
         miles = miles_to_int(miles)
-        result = 1.6 * miles
+        result = 1.60934 * miles
         self.root.ids.converted_value.text = "{:.2f}".format(result)
 
 
@@ -27,4 +27,4 @@ def miles_to_int(number):
     except ValueError:
         return 0
 
-SquareNumberApp().run()
+MetreConverterApp().run()
