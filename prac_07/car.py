@@ -5,13 +5,13 @@ class Car:
     """Represent a Car object."""
 
     def __str__(self):
-        return "{}, fuel={}, odometer={}".format(self.car, self.fuel, self.odometer)
+        return "{}, fuel={}, odometer={}".format(self.name, self.fuel, self.odometer)
 
-    def __init__(self, fuel=0, car=''):
+    def __init__(self, fuel=0, name=''):
         """Initialise a Car instance.
         fuel: float, one unit of fuel drives one kilometre
         """
-        self.car = car
+        self.name = name
         self.fuel = fuel
         self.odometer = 0
 

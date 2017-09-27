@@ -10,8 +10,7 @@ visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
 programming_language_list = [ruby, python, visual_basic]
 
 for language in programming_language_list:
-    if language.reflection:
-        print(language)
-
+    if language.is_dynamic():
+        print(language.name)
 
 print(ruby)
