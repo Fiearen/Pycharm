@@ -16,3 +16,5 @@ class UnreliableCar(Car):
         if drive_chance < self.reliability:
             distance_driven = super().drive(distance)
             return distance_driven
+        else:
+            return 0
